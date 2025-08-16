@@ -1,0 +1,45 @@
+{
+  "name": "base-defi-protocols",
+  "version": "1.0.0",
+  "description": "A collection of smart contracts and templates for Base blockchain development. Includes DeFi protocols, NFT contracts, and utility libraries optimized for Base network.",
+  "main": "index.js",
+  "scripts": {
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js --network base",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network base-goerli",
+    "verify": "hardhat verify --network base",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "coverage": "hardhat coverage",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "base",
+    "blockchain",
+    "defi",
+    "smart-contracts",
+    "ethereum",
+    "layer2",
+    "uniswap",
+    "aave",
+    "compound",
+    "nft",
+    "solidity"
+  ],
+  "author": "wearedood",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.2",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "hardhat": "^2.17.1",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.4",
+    "solhint": "^3.6.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "@uniswap/v3-core": "^1.0.1",
+    "@aave/core-v3": "^1.19.1",
+    "dotenv": "^16.3.1"
+  }
+}
